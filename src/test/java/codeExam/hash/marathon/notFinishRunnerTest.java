@@ -16,9 +16,6 @@ class notFinishRunnerTest {
     @Test
     void marathonTest() {
 
-        Arrays.sort(participant);
-        Arrays.sort(completion);
-
         HashMap<String,Integer> paticipant = new HashMap<>();
 
 
