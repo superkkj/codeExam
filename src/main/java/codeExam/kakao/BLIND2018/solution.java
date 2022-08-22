@@ -5,7 +5,7 @@ import java.util.List;
 
 public class solution {
 
-    void solution(String[] lines) {
+    int solution(String[] lines) {
 
         int answer = 0;
         List<Traffic> trafficList = new ArrayList<Traffic>();
@@ -14,7 +14,7 @@ public class solution {
         }
         answer = getCountMax(trafficList, true, answer);
         answer = getCountMax(trafficList, false, answer);
-        System.out.println(answer);
+       return answer;
     }
 
     //startSection에 startTime 넣은 구간의 최대 카운트를 answer에 넣고나 endTime넣은구간 최대 카운트를 넣어줌

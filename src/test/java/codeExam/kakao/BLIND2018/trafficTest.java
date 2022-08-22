@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 @SpringBootTest(classes = CodeExamApplication.class)
@@ -79,6 +80,9 @@ class trafficTest {
             try {
                 this.endTime = dateFormat.parse(logs[0] + " " + logs[1]).getTime();
                 this.startTime = endTime - (long) (processingTime * 1000) + 1;
+
+                System.out.println("(long) (processingTime * 1000):" + (long) (processingTime * 1000));
+                System.out.println((long) (processingTime * 1000)+1);
             } catch (Exception e) {
                 System.out.println("데이터 포맷 에러");
                 e.printStackTrace();
