@@ -14,7 +14,7 @@ public class solution {
         }
         answer = getCountMax(trafficList, true, answer);
         answer = getCountMax(trafficList, false, answer);
-       return answer;
+        return answer;
     }
 
     //startSection에 startTime 넣은 구간의 최대 카운트를 answer에 넣고나 endTime넣은구간 최대 카운트를 넣어줌
@@ -26,8 +26,7 @@ public class solution {
             for (int j = 0; j < trafficList.size(); ++j) {
                 if ((startSection <= trafficList.get(j).startTime && trafficList.get(j).startTime < endSection)
                         || (startSection <= trafficList.get(j).endTime && trafficList.get(j).endTime < endSection)
-                        || (trafficList.get(j).startTime <= startSection && endSection <= trafficList.get(j).endTime))
-                {
+                        || (trafficList.get(j).startTime <= startSection && endSection <= trafficList.get(j).endTime)) {
                     count++;
                 }
                 maxCount = Math.max(maxCount, count);
