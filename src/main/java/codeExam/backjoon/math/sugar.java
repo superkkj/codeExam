@@ -1,4 +1,4 @@
-package codeExam.math;
+package codeExam.backjoon.math;
 
 import java.util.Scanner;
 
